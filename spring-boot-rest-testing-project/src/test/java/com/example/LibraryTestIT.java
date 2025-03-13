@@ -6,7 +6,10 @@ import com.example.entity.Library;
 import com.jayway.jsonpath.JsonPath;
 import lombok.extern.slf4j.Slf4j;
 import org.json.JSONException;
+import org.junit.jupiter.api.MethodOrderer;
+import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestMethodOrder;
 import org.skyscreamer.jsonassert.JSONAssert;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
@@ -21,33 +24,26 @@ import org.springframework.test.context.ActiveProfiles;
 import java.util.Optional;
 
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
-@ActiveProfiles("dev")
+@ActiveProfiles("h2")
 @Slf4j
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class LibraryTestIT {
-    private static final String GET_URL = "http://localhost:8080/api/library/authorName/Rahul";
-    
-
     private static final String expected = """
     		[
-			    {
-			        "id": 1,
-			        "bookName": "Cypress",
-			        "isbn": "abcd",
-			        "aisle": 4,
-			        "author": "Rahul"
-			    },
-			    {
-			        "id": 2,
-			        "bookName": "DevOps",
-			        "isbn": "xyz",
-			        "aisle": 43,
-			        "author": "Rahul"
-			    }
-			]
-   """;
+				{
+				    "id": 1,
+				    "bookName": "JPA Persistence",
+				    "isbn": "4XY",
+				    "aisle": 40,
+				    "author": "Rama"
+				}
+		  ]
+    	""";
 
+    @Order(2)
     @Test
     void testAuthorNameBookTest() throws JSONException {
+        String GET_URL = "http://localhost:8080/api/library/authorName/Rama";
         TestRestTemplate testRestTemplate = new TestRestTemplate();
         ResponseEntity<String> responseEntity = testRestTemplate.getForEntity(GET_URL, String.class);
 
@@ -57,6 +53,7 @@ public class LibraryTestIT {
         JSONAssert.assertEquals(expected, responseEntity.getBody(), false);
     }
 
+    @Order(1)
     @Test
     void createLibraryIntegrationTest(){
         HttpHeaders headers = new HttpHeaders();

@@ -240,3 +240,9 @@ public class LibraryTestIT {
     }
 }
 ```
+
+# Run the Integration Test Cases, please start the spring boot app
+
+````
+mvn spring-boot:run -Dspring-boot.run.profiles=h2
+````
