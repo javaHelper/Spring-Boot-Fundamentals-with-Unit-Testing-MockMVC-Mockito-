@@ -140,7 +140,7 @@ class SpringBootRestServiceApplicationTests {
 
 # Integration Test cases
 
-```
+```java
 package com.example;
 
 import static org.assertj.core.api.Assertions.assertThat;
