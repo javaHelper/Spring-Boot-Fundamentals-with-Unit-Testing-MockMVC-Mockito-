@@ -23,7 +23,7 @@
         <profile>
             <id>h2</id>
             <properties>
-                <activatedProperties>dev</activatedProperties>
+                <activatedProperties>h2</activatedProperties>
             </properties>
         </profile>
     </profiles>

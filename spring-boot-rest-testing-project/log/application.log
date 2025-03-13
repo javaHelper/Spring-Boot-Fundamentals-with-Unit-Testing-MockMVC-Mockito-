@@ -2382,3 +2382,55 @@ create table library (id bigint not null auto_increment, aisle integer, author v
 2025-03-13T22:46:36.248+05:30  INFO 96998 --- [spring-boot-rest-testing-project] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-03-13T22:46:36.252+05:30  INFO 96998 --- [spring-boot-rest-testing-project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2025-03-13T22:46:36.272+05:30  INFO 96998 --- [spring-boot-rest-testing-project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-13T22:48:34.781+05:30  INFO 97664 --- [spring-boot-rest-testing-project] [main] .e.SpringBootRestServiceApplicationTests : Starting SpringBootRestServiceApplicationTests using Java 21.0.4 with PID 97664 (started by prateekashtikar in /Users/prats/Downloads/Spring-Boot-Fundamentals-with-Unit-Testing-MockMVC-Mockito-/spring-boot-rest-testing-project)
+2025-03-13T22:48:34.782+05:30  INFO 97664 --- [spring-boot-rest-testing-project] [main] .e.SpringBootRestServiceApplicationTests : The following 1 profile is active: "mysql"
+2025-03-13T22:48:35.932+05:30  INFO 97664 --- [spring-boot-rest-testing-project] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-03-13T22:48:35.932+05:30  INFO 97664 --- [spring-boot-rest-testing-project] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-03-13T22:48:35.933+05:30  INFO 97664 --- [spring-boot-rest-testing-project] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2025-03-13T22:48:35.947+05:30  INFO 97664 --- [spring-boot-rest-testing-project] [main] .e.SpringBootRestServiceApplicationTests : Started SpringBootRestServiceApplicationTests in 1.362 seconds (process running for 1.889)
+2025-03-13T22:48:36.069+05:30  INFO 97664 --- [spring-boot-rest-testing-project] [main] c.example.controller.LibraryController   : Book  is deleted 
+2025-03-13T22:49:29.742+05:30  INFO 97928 --- [spring-boot-rest-testing-project] [main] .SpringBootRestTestingProjectApplication : Starting SpringBootRestTestingProjectApplication using Java 21.0.4 with PID 97928 (/Users/prats/Downloads/Spring-Boot-Fundamentals-with-Unit-Testing-MockMVC-Mockito-/spring-boot-rest-testing-project/target/classes started by prateekashtikar in /Users/prats/Downloads/Spring-Boot-Fundamentals-with-Unit-Testing-MockMVC-Mockito-/spring-boot-rest-testing-project)
+2025-03-13T22:49:29.744+05:30  INFO 97928 --- [spring-boot-rest-testing-project] [main] .SpringBootRestTestingProjectApplication : The following 1 profile is active: "h2"
+2025-03-13T22:49:30.031+05:30  INFO 97928 --- [spring-boot-rest-testing-project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-13T22:49:30.058+05:30  INFO 97928 --- [spring-boot-rest-testing-project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 1 JPA repository interface.
+2025-03-13T22:49:30.306+05:30  INFO 97928 --- [spring-boot-rest-testing-project] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-13T22:49:30.315+05:30  INFO 97928 --- [spring-boot-rest-testing-project] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-13T22:49:30.315+05:30  INFO 97928 --- [spring-boot-rest-testing-project] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2025-03-13T22:49:30.346+05:30  INFO 97928 --- [spring-boot-rest-testing-project] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-13T22:49:30.346+05:30  INFO 97928 --- [spring-boot-rest-testing-project] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 582 ms
+2025-03-13T22:49:30.427+05:30  INFO 97928 --- [spring-boot-rest-testing-project] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-13T22:49:30.453+05:30  INFO 97928 --- [spring-boot-rest-testing-project] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2025-03-13T22:49:30.469+05:30  INFO 97928 --- [spring-boot-rest-testing-project] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-13T22:49:30.619+05:30  INFO 97928 --- [spring-boot-rest-testing-project] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-13T22:49:30.632+05:30  INFO 97928 --- [spring-boot-rest-testing-project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-13T22:49:30.770+05:30  INFO 97928 --- [spring-boot-rest-testing-project] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5170bc02
+2025-03-13T22:49:30.771+05:30  INFO 97928 --- [spring-boot-rest-testing-project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-13T22:49:30.812+05:30  WARN 97928 --- [spring-boot-rest-testing-project] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-13T22:49:31.210+05:30  INFO 97928 --- [spring-boot-rest-testing-project] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-13T22:49:31.275+05:30  INFO 97928 --- [spring-boot-rest-testing-project] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T22:49:31.444+05:30  WARN 97928 --- [spring-boot-rest-testing-project] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-13T22:49:31.618+05:30  WARN 97928 --- [spring-boot-rest-testing-project] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-03-13T22:49:31.619+05:30  INFO 97928 --- [spring-boot-rest-testing-project] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T22:49:31.620+05:30  INFO 97928 --- [spring-boot-rest-testing-project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-13T22:49:31.624+05:30  INFO 97928 --- [spring-boot-rest-testing-project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-13T22:49:31.632+05:30  INFO 97928 --- [spring-boot-rest-testing-project] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-13T22:49:31.641+05:30 ERROR 97928 --- [spring-boot-rest-testing-project] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2025-03-13T22:49:36.906+05:30  INFO 96490 --- [spring-boot-rest-testing-project] [RMI TCP Connection(14)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-03-13T22:49:36.971+05:30  INFO 96490 --- [spring-boot-rest-testing-project] [RMI TCP Connection(14)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T22:49:36.979+05:30  INFO 96490 --- [spring-boot-rest-testing-project] [RMI TCP Connection(14)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-13T22:49:37.022+05:30  INFO 96490 --- [spring-boot-rest-testing-project] [RMI TCP Connection(14)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
