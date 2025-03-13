@@ -3,6 +3,10 @@
 #
 
 ````
+mvn spring-boot:run -Dspring-boot.run.profiles=dev
+````
+
+````
 curl --location 'http://localhost:8080/api/library/Rahul'
 ````
 
@@ -236,5 +240,3 @@ public class LibraryTestIT {
     }
 }
 ```
-
-
